@@ -37,7 +37,7 @@ lottie_animation = load_lottieurl(animation_url)
 @st.cache_resource
 def get_embedding_model():
     """Load the sentence transformer embedding model once."""
-    return SentenceTransformer('all-MiniLM-L6-v2')
+    return SentenceTransformer('ibm-granite/granite-speech-3.3-8b')
 
 
 # --------------------- Core App Class ---------------------
@@ -231,3 +231,4 @@ def main():
 # --------------------- Entry Point ---------------------
 if __name__ == "__main__":
     main()
+
